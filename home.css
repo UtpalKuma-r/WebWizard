@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+    transition: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    z-index: 1;
+    background-image: "images/back.mp4";
+    height: 100vh;
+}
+
+#myVideo {
+    width: 100vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    background-color: #3eb3f2;
+    border-radius: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 20vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links li {
+    padding: 15px;
+    display: block;
+    color: #000000;
+    position: relative;
+}
+
+.dropdown_content {
+    position: absolute;
+    display: none;
+    z-index: 10;
+    background: #3eb3f2; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 10px 0;
+    width: max-content;
+    margin-top: 12px;
+}
+
+.nav-links .dropdown_content li {
+    color: #000000;
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.nav-links .dropdown_content li:hover {
+    background-color: #3eb3f2;
+    color: #ffffff;
+}
+
+li.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.specific-region a:hover {
+    background-color: #ffffff;
+}
+
+.specific-region a {
+    background-color: #ffffff;
+}
+
+.nav-links li, .dropdown_content li {
+    transition: all 0.3s ease;
+}
+
+.nav-links .dropdown_content a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 20px;
+    white-space: nowrap;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.nav-links .dropdown_content a:hover {
+    background-color: #3eb3f2;
+    color: #ffffff;
+}
+
+
+.col{
+    float: left;
+    width: 300;
+    padding: 10px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.landing{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    height: 70vh;
+}
+
+.footer{
+    height: 10vh;
+    width: 100vh;
+}
+
+.footer img{
+    width: 50%;
+    margin: auto;
+}
